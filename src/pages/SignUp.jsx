@@ -11,15 +11,18 @@ const SignUp = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [showAlert, setShowAlert] = useState(false);
   const [alertMessage, setAlertMessage] = useState('');
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     // Validate the form fields
     if (!userId && !email) {
       setAlertMessage('Either User ID or Email must be provided');
       setShowAlert(true);
+      setLoading(false);
       return;
     }
 
@@ -28,18 +31,21 @@ const SignUp = () => {
     if (email && !emailPattern.test(email)) {
       setAlertMessage('Invalid email address');
       setShowAlert(true);
+      setLoading(false);
       return;
     }
 
     if (password.length < 6) {
       setAlertMessage('Password should be at least 6 characters');
       setShowAlert(true);
+      setLoading(false);
       return;
     }
 
     if (password !== confirmPassword) {
       setAlertMessage('Passwords do not match');
       setShowAlert(true);
+      setLoading(false);
       return;
     }
 
@@ -53,14 +59,24 @@ const SignUp = () => {
         navigate('/login');
       }, 2000); // Redirect after 2 seconds
     } catch (error) {
-      console.error('Error submitting form:', error.response.data);
-      setAlertMessage(error.response.data.message);
+      console.error('Error submitting form:', error);
+      if (error.response) {
+        setAlertMessage(error.response.data.message || 'An error occurred');
+      } else if (error.request) {
+        setAlertMessage('No response from server');
+      } else {
+        setAlertMessage('Error: ' + error.message);
+      }
       setShowAlert(true);
+    } finally {
+      setLoading(false);
     }
   };
+
   const handleBack = () => {
     navigate('/');
   };
+
   return (
     <div className='bggg'>
       <img src="/assets/slide3.jpg" alt="" />
@@ -68,10 +84,10 @@ const SignUp = () => {
         <Row className="justify-content-md-center">
           <Col md={6}>
             <div className="signup-form">
-            <button onClick={handleBack} className="btn btn-secondary mb-3 backbtn">
-          <i className="fas fa-arrow-left"></i> Back to Home
-        </button>
-        
+              <button onClick={handleBack} className="btn btn-secondary mb-3 backbtn">
+                <i className="fas fa-arrow-left"></i> Back to Home
+              </button>
+              
               <h2 className="mb-4">Signup</h2>
               {showAlert && <Alert variant={alertMessage === 'Registration successful!' ? 'success' : 'danger'}>{alertMessage}</Alert>}
               <Form onSubmit={handleSubmit}>
@@ -113,8 +129,8 @@ const SignUp = () => {
                     required
                   />
                 </Form.Group>
-                <Button variant="primary" type="submit">
-                  Signup
+                <Button variant="primary" type="submit" disabled={loading}>
+                  {loading ? 'Signing Up...' : 'Signup'}
                 </Button>
               </Form>
             </div>
