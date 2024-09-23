@@ -1,0 +1,172 @@
+.rent-card-form {
+    position: relative;
+    top: 10px;
+    z-index: 1;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #070114;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send to the back */
+}
+
+.bgimg img {
+    position: absolute;
+    width: 100%;
+    height: max-content;
+    object-fit: cover;
+    z-index: -1; /* Ensure the image covers the div */
+}
+
+.form-group {
+    position: relative;
+    z-index: 1; /* Bring form content in front of background image */
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group textarea,
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #070114;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.form-group .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group .radio-group label {
+    margin-right: 20px;
+}
+
+.form-group .radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form-summary {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #080115;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-summary h4 {
+    margin-top: 0;
+}
+
+.form-summary p {
+    margin: 5px 0;
+}
+
+.form-navigation {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px; /* Space above the buttons */
+}
+
+.form-navigation button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-navigation button:hover {
+    background-color: #0056b3;
+}
+
+.image-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between images */
+    margin: 20px 0; /* Space around image container */
+    margin-bottom: 80px;
+}
+
+.image-preview {
+    max-width: 100px; /* Control image width */
+    max-height: 100px; /* Control image height */
+    object-fit: cover; /* Ensure images cover the container */
+    border: 1px solid #ddd; /* Optional border for image */
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+@media(max-width:768px) {
+    .bgimg img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1; /* Ensure the image covers the div */
+    }
+
+    .rent-card-form {
+        margin: 10px;
+        padding: 20px;
+        max-width: 100%;
+        border-radius: 5px;
+        background-color: #070114;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-navigation {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        align-items: center; /* Center buttons */
+    }
+
+    .form-navigation button {
+        width: 100%; /* Full width on smaller screens */
+        margin-top: 10px; /* Space between stacked buttons */
+    }
+}
+.back-to-dashboard-btn {
+    width: 100%; /* Make the button full width */
+    margin: 20px 0; /* Space around the button */
+    padding: 15px; /* Increase padding for a bigger button */
+    font-size: 18px; /* Slightly larger font size */
+    background-color: #07101a; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Center the text */
+}
+
+.back-to-dashboard-btn:hover {
+    background-color: #0056b3; /* Darken on hover */
+}

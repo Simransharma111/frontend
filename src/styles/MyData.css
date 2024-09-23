@@ -1,0 +1,142 @@
+/* Container */
+.user-uploads {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.user-uploads h2 {
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 30px;
+}
+
+/* Success Message */
+.success-message {
+  color: #28a745;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* List */
+.user-uploads ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* List Items */
+.user-uploads li {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Title */
+.user-uploads h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #495057;
+}
+
+/* Paragraphs */
+.user-uploads p {
+  margin: 8px 0;
+  color: #6c757d;
+}
+
+/* Image Preview Container */
+.image-preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Image Preview */
+.image-preview {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+/* Buttons */
+.user-uploads button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+
+.user-uploads button:hover {
+  background-color: #0056b3;
+}
+
+.user-uploads button:last-child {
+  margin-left: 10px;
+  background-color: #dc3545;
+}
+
+.user-uploads button:last-child:hover {
+  background-color: #c82333;
+}
+
+/* Form Inputs */
+.user-uploads input[type="text"],
+.user-uploads textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #495057;
+  background-color: #ffffff;
+}
+
+/* Textarea */
+.user-uploads textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* Form Group */
+.user-uploads .form-group {
+  margin-top: 15px;
+}
+
+/* Form Group Label */
+.user-uploads .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #495057;
+}
+
+/* Checkbox */
+.user-uploads .form-group input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* File Input */
+.user-uploads .form-group input[type="file"] {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  font-size: 16px;
+}

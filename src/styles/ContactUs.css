@@ -1,0 +1,77 @@
+.contact-us-container {
+    background: url('../../public/assets/slide3.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  .contact-us-content {
+    background: #070114;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .contact-us-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group .contact {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label .contact{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input .contact,
+  .form-group textarea.contact {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  .form-group input.contact:focus,
+  .form-group textarea.contact:focus {
+    border-color: #80bdff;
+    outline: none;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  .social-media-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .instagram-link {
+    display: inline-flex;
+    align-items: center;
+    color: #E1306C;
+    text-decoration: none;
+  }
+  
+  .instagram-link:hover {
+    text-decoration: underline;
+  }
+  

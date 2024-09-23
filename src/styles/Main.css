@@ -1,0 +1,52 @@
+.search-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    padding: 20px; /* Increase padding for better spacing */
+    border-radius: 10px; /* Increase border-radius for a smoother look */
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .search-bar-container:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .search-input {
+    width: 300px; /* Increase initial width */
+    height: 40px; /* Increase height */
+    padding: 10px; /* Add padding for better spacing */
+    font-size: 16px; /* Increase font size */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: width 0.3s ease-in-out; /* Transition for width change */
+    margin: 10px;
+ 
+  }
+  
+  .search-input:focus {
+    width: 400px; /* Increase width on focus */
+    outline: none;
+    border-color: #66afe9; /* Change border color on focus */
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Add shadow effect */
+  }
+  .btn{
+    background-color: #0f172a!important;
+  }
+  @media (max-width: 768px) {
+    .search-bar-container form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .search-bar-container .form-control {
+      margin-bottom: 10px;
+      width: 100%; /* Full width on small screens */
+    }
+  
+    .search-input:focus {
+      width: 100%; /* Full width on focus for small screens */
+    }
+  }
+  

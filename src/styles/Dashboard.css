@@ -1,0 +1,95 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../../public/assets/slide2.jpg'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Visible transparent box shadow */
+    text-align: center;
+  }
+  
+  .dashboard-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for better readability */
+  }
+  
+  .new, .edit {
+    width: 200px;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent background to match the content area */
+    color: #fff;
+    border: none;
+  }
+  
+  .new {
+    background-color: rgba(0, 123, 255, 0.7);
+  }
+  
+  .new:hover {
+    background-color: rgba(0, 86, 179, 0.7);
+  }
+  
+  .edit {
+    background-color: rgba(108, 117, 125, 0.7);
+  }
+  
+  .edit:hover {
+    background-color: rgba(90, 98, 104, 0.7);
+  }
+  .back-btn {
+   width:30%; /* Full width */
+    padding: 12px;
+    font-size: 1.2rem; /* Slightly larger font size */
+    margin-bottom: 20px;
+    background-color: #01070d; /* Primary color */
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Slightly rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+.back-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.logout-btn {
+  position: relative; /* Absolute positioning */
+  top: 10px;
+  right: 170px;
+  bottom: 10px; /* Distance from the bottom */
+  /* Distance from the left */
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}

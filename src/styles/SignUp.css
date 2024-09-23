@@ -1,0 +1,55 @@
+.bggg{
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+
+}
+.bggg img{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    z-index:-1; 
+}
+.signup-container {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  
+  .signup-form {
+    padding: 20px;
+    border-radius: 5px;
+    border:2px solid #070115;
+    background-color: #070115;
+  }
+  
+  .signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+
+  .signup-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .signup-form .btn-primary {
+    width: 100%;
+    margin-top: 10px;
+  }
+  @media(max-width:768px){
+    .bggg{
+height: 100vh;
+padding: 0;
+    }
+    .signup-container{
+        height: 80vh;
+    }
+}
+@media(max-width:1024px){
+    .signup-containert{
+        height: 80vh;
+    }
+}

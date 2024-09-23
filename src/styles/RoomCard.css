@@ -1,0 +1,25 @@
+/* RoomCard.css */
+
+.room-cards-container {
+    padding: 20px;
+
+  }
+  
+  .card {
+    background-color:#0f172a;; /* Dark background color */
+    color: #fff; /* Light text color */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .icon-container {
+    color: #007bff; /* Customize the color of the icons */
+  }
+  
