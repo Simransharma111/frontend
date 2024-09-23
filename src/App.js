@@ -27,13 +27,13 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/roomlist" element={<RoomList />} />
+        <Route path="/roomlist" element={<ContactUs />} />
         
         {/* Wrap PrivateRoute around protected routes */}
 
         <Route  path="/dashboard" element={<PrivateRoute element={Dashboard} />} />
         <Route  path="/upload-detail" element={<PrivateRoute element={UploadDetail} />} />
         <Route  path="/mydata" element={<PrivateRoute element={MyData} />} />
-        <Route  path="/contact" element={<PrivateRoute element={ContactUs} />} />
 
       </Routes>
       </>
