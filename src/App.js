@@ -27,7 +27,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/roomlist" element={<RoomList />} />
-        <Route path="/roomlist" element={<ContactUs />} />
+        <Route path="/contact" element={<ContactUs />} />
         
         {/* Wrap PrivateRoute around protected routes */}
 
