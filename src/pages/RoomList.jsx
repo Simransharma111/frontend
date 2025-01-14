@@ -28,7 +28,7 @@ const RoomList = () => {
   useEffect(() => {
     const fetchRooms = async () => {
       try {
-        let url = 'https://backend-gamma-nine-69.vercel.app/api/rent-card';
+        let url = 'https://backendofroomrent.onrender.com/api/rent-card';
         if (selectedRoomType) {
           url += `?type=${selectedRoomType}`;
         }
@@ -259,7 +259,7 @@ const RoomList = () => {
               {selectedRoom.images.map((image, index) => (
                 <Carousel.Item key={index}>
                   <img
-                    src={`http://localhost:5000/uploads/${image}`}
+                    src={`https://backendofroomrent.onrender.com/uploads/${image}`}
                     alt={`Room Image ${index + 1}`}
                     className="d-block w-100"
                   />
