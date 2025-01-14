@@ -187,7 +187,7 @@ const RoomList = () => {
                     {room.images.map((image, imgIndex) => (
                       <Carousel.Item key={imgIndex}>
                         <img
-                          src={`https://backend-gamma-nine-69.vercel.app/uploads/${image}`}
+                          src={`https://backendofroomrent.onrender.com/uploads/${image}`}
                           alt={`Room ${imgIndex + 1}`}
                           className="d-block w-100"
                           onClick={(e) => handleShowDetails(room, e)}
