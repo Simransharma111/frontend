@@ -34,7 +34,7 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.post('https://backend-gamma-nine-69.vercel.app/api/auth/login', { userId, email, password });
+      const response = await axios.post('https://backendofroomrent.onrender.com/api/auth/login', { userId, email, password });
 
       console.log('Login response:', response.data);
 
