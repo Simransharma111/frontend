@@ -50,7 +50,7 @@ const SignUp = () => {
     }
 
     try {
-      const response = await axios.post('https://backend-gamma-nine-69.vercel.app/api/auth/register', { userId, email, password });
+      const response = await axios.post('https://backendofroomrent.onrender.com/api/auth/register', { userId, email, password });
       console.log('Form submitted:', response.data);
       // Show success message and redirect to login page
       setAlertMessage('Registration successful!');
