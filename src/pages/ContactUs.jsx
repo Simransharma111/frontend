@@ -18,7 +18,7 @@ const ContactUs = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('https://backend-gamma-nine-69.vercel.app/api/contact', { name, email, message });
+      const response = await axios.post('https://backendofroomrent.onrender.com/api/contact', { name, email, message });
       setAlertMessage('Message sent successfully!');
       setShowAlert(true);
       setName('');
