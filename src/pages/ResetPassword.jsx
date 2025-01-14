@@ -19,7 +19,7 @@ const ResetPassword = () => {
 
     try {
       // Use template literals to include token in the URL
-      const response = await axios.post(`https://backend-gamma-nine-69.vercel.app/api/reset-password/${token}`, { password });
+      const response = await axios.post(`https://backendofroomrent.onrender.com/api/reset-password/${token}`, { password });
       setAlertMessage('Password reset successful!');
       setShowAlert(true);
       setTimeout(() => {
