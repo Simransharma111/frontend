@@ -18,7 +18,7 @@ const MyData = () => {
         const userId = localStorage.getItem('userId');
         const email = localStorage.getItem('email');
  
-        const response = await axios.get('http://localhost:5000/api/rent-card/user', {
+        const response = await axios.get('https://backendofroomrent.onrender.com/api/rent-card/user', {
           headers: { 'x-auth-token': token },
           params: { userId, email },
         });
