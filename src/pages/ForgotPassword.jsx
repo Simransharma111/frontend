@@ -16,7 +16,7 @@ const ForgotPassword = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('https://backend-gamma-nine-69.vercel.app/api/request-password-reset', { email });
+      const response = await axios.post('https://backendofroomrent.onrender.com/api/request-password-reset', { email });
       setAlertMessage('Password reset link sent to your email.');
       setAlertVariant('success');
     } catch (error) {
