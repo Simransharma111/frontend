@@ -81,7 +81,7 @@ const MyData = () => {
         }
       });
 
-      await axios.put(`http://localhost:5000/api/rent-card/${editMode}`, updatedFormData, {
+      await axios.put(`https://backendofroomrent.onrender.com/api/rent-card/${editMode}`, updatedFormData, {
         headers: {
           'x-auth-token': token,
           'Content-Type': 'multipart/form-data'
@@ -250,7 +250,7 @@ const MyData = () => {
                       upload.images.map((image, index) => (
                         <img
                           key={index}
-                          src={`http://localhost:5000/uploads/${image}`}
+                          src={`https://backendofroomrent.onrender.com/uploads/${image}`}
                           alt={`Upload ${index}`}
                           className="image-preview"
                         />
