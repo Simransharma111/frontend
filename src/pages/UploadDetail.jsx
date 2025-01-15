@@ -119,7 +119,7 @@ const UploadDetail = () => {
         }
 
         try {
-            const response = await axios.post('https://backendofroomrent.onrender.com/api/rent-card', formDataToSend, {
+            const response = await axios.post('https://backendofroomrent.onrender.com/api/rent-card/send', formDataToSend, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                     'x-auth-token': localStorage.getItem('authToken'), // Add token if required
